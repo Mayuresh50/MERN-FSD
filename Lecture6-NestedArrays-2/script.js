@@ -72,7 +72,7 @@ A = [1,2,3,4]
 
 
 //Rotatation of array from left to right (Anti - Clockwise Rotation) -----> [10,20,30,40,50]  --> [50,10,20,30,40]
-//without using reverse for loop 
+//without using reverse for loop
 // let arr = [10, 20, 30, 40, 50];
 // let copy = arr[arr.length - 1]
 // for (let i = 0; i < arr.length; i++) {
@@ -84,10 +84,6 @@ A = [1,2,3,4]
 //never change a future element , that were going to use in future
 
 //HW: shift, unshift or push, pop  ---> for rotations in array
-
-
-
-
 
 
 //rotate array by k element clockwise
@@ -112,21 +108,19 @@ A = [1,2,3,4]
 
 
 //rotate by k element anticlockwise
-
-function rotateArrayAntiClockwise(arr, k) {
-    k = k % arr.length;
-    for (let j = 0; j < k; j++) {
-        let copy = arr[0];
-        for (let i = 0; i < arr.length - 1; i++) {
-            arr[i] = arr[i + 1];
-        }
-        arr[arr.length - 1] = copy;
-    }
-    return arr;
-}
-let arr = [1, 2, 3, 4, 5];
-let k = 8
-console.log(rotateArrayAntiClockwise(arr, k));
-
+// function rotateArrayAntiClockwise(arr, k) {
+//     k = k % arr.length;
+//     for (let j = 0; j < k; j++) {
+//         let copy = arr[0];
+//         for (let i = 0; i < arr.length - 1; i++) {
+//             arr[i] = arr[i + 1];
+//         }
+//         arr[arr.length - 1] = copy;
+//     }
+//     return arr;
+// }
+// let arr = [1, 2, 3, 4, 5];
+// let k = 8
+// console.log(rotateArrayAntiClockwise(arr, k));
 //TC : O(n*n)
 //SC : O(1);
