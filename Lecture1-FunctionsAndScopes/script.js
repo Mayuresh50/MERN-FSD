@@ -52,7 +52,7 @@
 // console.log(sumoftwonumbers); //10
 
 
-//nested Function
+// nested Function
 // function personDetails(name, birthYear) {
 //     console.log("Name: " + name);
 //     console.log("Age: ", calculateAge(birthYear));
@@ -71,14 +71,14 @@
 // console.log(square(5));
 
 
-// console.log("hello", 2 + 2); //will treat everything after comma as a single argument
+// console.log("hello", 2 + 2); //will treat everything after comma as a multiple argument
 // console.log("hello" + 2 + 2); //will treat anything as a one argument
 
 
 //=============================Arrays Starts here=============================================
 
-
-// console.log(students[2]); //prints 2nd student name
+// let student = ["Mayuresh", "Hitesh", "Jayesh", "Mitanshu", "Darshan"];
+// console.log(student[2]); //prints 2nd student name
 // console.log(4, students[3]); //prints index of Mitanshu
 
 //Using loops will print all students name, with roll no.

@@ -163,7 +163,7 @@ subarrays = [[1], [2], [3], [4], [5]];
 // }
 // console.log(subarrays);
 
-//Print sum of all subarrays
+// Print sum of all subarrays
 // let arr = [1, 2, 3, 4, 5];
 // let totalsum = 0;
 // for (let i = 0; i < arr.length; i++) {

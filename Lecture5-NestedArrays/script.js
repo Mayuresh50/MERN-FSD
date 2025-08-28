@@ -85,15 +85,11 @@ Previous Lectures
 //   [2, 6, 12, 43, 3, 5],
 //   [8, 10, 34, 23, 12, 8],
 // ]
-
 let arr = [
     [1, 2, 3, 4, 5, 6],
     [2, 6, 12, 43, 3, 5],
     [8, 10, 34, 23, 12, 8],
-    // [9, 1, 7, 33, 0, 2],
-    // [3, 14, 8, 19, 11, 4]
 ];
-
 function reverseOdd(arr) {
     for (let j = 0; j < arr[0].length; j++) {
         if (j % 2 == 0) continue;
@@ -109,5 +105,21 @@ function reverseOdd(arr) {
     }
     return arr;
 }
+console.log("Reversed Array : ", reverseOdd(arr));
+//time complexity : O(n)
+//space complexity : O(1)
 
-console.log(reverseOdd(arr));
+
+//Sum of all sub arrays
+let arr1 = [1, 2, 3, 4, 5];
+let totalsum = 0;
+for (let i = 0; i < arr1.length; i++) {
+    let sum = 0;
+    for (let j = i; j < arr1.length; j++) {
+        sum = sum + arr1[j];
+        totalsum = totalsum + sum;
+    }
+}
+console.log({ totalsum });
+//time complexity : O(n*n);
+//Space complexity : O(1)
