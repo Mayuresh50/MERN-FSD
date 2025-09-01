@@ -12,9 +12,7 @@
 //         this.skills.push(skills);
 //     }
 // }
-
 //=======================================================================================================
-
 // const obj = {
 //     property1: "PropertyOne",
 //     1: "one"      //by default it will take key ie 1 as string
@@ -22,9 +20,7 @@
 // console.log(obj.property2);    //undefined because no key present as property2;
 // console.log(obj["property2"]); //undefined because no key present as property2;
 // console.log(obj[1]);    //it will print the value of key 1\
-
 // obj.property2 = "Property2"
-
 //console.log(obj);
 
 //Object keys can have array as values also
@@ -32,7 +28,6 @@
 // for (let i of obj.arrProperty) {
 //     console.log(i)
 // }
-
 //Another way of creating object
 // const newObject = newObject();
 // newObject.a = "a";
@@ -40,18 +35,11 @@
 // newObject.c = "c";
 // newObject.d = "d";
 // newObject.e = "e";
-
 // console.log({ newObject })
-
-
-
-
-
-
 
 //======================================String Starts Here================================================
 
-// //strings using single quotes
+//strings using single quotes
 // let str = 'a'    //type 1 of defining strings
 // console.log(typeof (str));
 
@@ -61,23 +49,23 @@
 // str = 'abc';
 // console.log(typeof (str));
 
-// //Strings using double quotes
+//Strings using double quotes
 // str = "ABC"        //type 2 of defining strings 
 // console.log(typeof (str));
 
-// //strings using backticks
+//strings using backticks
 // str = `abc`;         //type 3 of defining strings
 // console.log(typeof (str));
 
-// //case when we must use double inverted comma
+//case when we must use double inverted comma
 // str = "Hi I'm Mayuresh"
 // console.log({ str });
 
-// //case when we must use single inverted comma
+//case when we must use single inverted comma
 // str = 'Hi this is "Java" classes';
 // console.log({ str })
 
-// //case when we must use backticks 
+//case when we must use backticks 
 // str = `Hi I'm Mayuresh, I have joined "Mern classes"`;
 // console.log({ str });
 
@@ -89,18 +77,18 @@
 
 //Some methods in strings
 
-str = ` We're going to see some methods of strings `;
+// str = ` We're going to see some methods of strings `;
 
-// //Includes function
+//Includes function
 // console.log(str.includes("a"));     //Returns False
 // console.log(str.includes("g"));     //Returns True
 
 
-// //Replace function       //This only creates a new string, it doesn't modify the original ones
+//Replace function       //This only creates a new string, it doesn't modify the original ones
 // console.log(str.replace("s", "x"))     //replace only first value pf S with X
 // console.log(str)            //Prints original String
 
-// //replaceAll function
+//replaceAll function
 // console.log(str.replaceAll("s", "X"))     //replaces all the values of s by X
 
 
@@ -130,14 +118,14 @@ str = ` We're going to see some methods of strings `;
 // str = `We're going, to see, some methods, of strings`;
 // console.log(str.split(","));    //identified comma(,) as a seperator
 
-str = `Hello, Welcome to MERN stack course`
+// str = `Hello, Welcome to MERN stack course`
 
 // console.log(str.split(" "))
 
 //toUpperCase() Function
 // console.log(str.toUpperCase());
 
-// //toLowercase() Function
+//toLowercase() Function
 // console.log(str.toLowerCase());
 
 // const string = "Vaibhav";
@@ -166,7 +154,7 @@ str = `Hello, Welcome to MERN stack course`
 // const [hi, ...bye] = ["Hi", "Bye", "Byee", "Byeeee"]
 // console.log(hi, bye);
 
-// //spread operator
+//spread operator
 // const arr = [1, 2, 3, 4, 5]
 // console.log("Spreaded array :", [0, ...arr, 67, 678, 679])
 
