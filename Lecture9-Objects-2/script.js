@@ -140,9 +140,36 @@ str = `Hello, Welcome to MERN stack course`
 // //toLowercase() Function
 // console.log(str.toLowerCase());
 
-const string ="Vaibhav";
-const number = 66;
-const bool = true;
-const obj ={
-    name: "Vaibhav"
-}
+// const string = "Vaibhav";
+// const number = 66;
+// const bool = true;
+// const obj = {
+//     name: "Vaibhav"
+// }
+// console.log(string._proto_);
+// console.log(number._proto_);
+// console.log(bool._proto_);
+// console.log(obj._proto_);
+
+//=========================Spread and Rest Operator=====================================
+
+//Rest Operator    --> Combines all the arguments and transforms them into an array
+// function addStudent(students, ...studentName) {
+//     for (let student of studentName) {
+//         students.push(student);
+//     }
+//     console.log(students)     //prints the array
+// }
+// const students = ["Mayuresh", "Darshan", "Hitesh"]
+// addStudent(students, "Mitanshu", "Jayesh", "Pratik")
+
+const [hi, ...bye] = ["Hi", "Bye", "Byee", "Byeeee"]
+console.log(hi, bye);
+
+//spread operator 
+const arr = [1, 2, 3, 4, 5]
+console.log("Spreaded array :", [0, ...arr, 67, 678, 679])
+
+//HW
+//Spread and rest use in object
+
