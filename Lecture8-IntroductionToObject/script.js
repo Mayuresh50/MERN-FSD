@@ -230,7 +230,7 @@
 // const portFolio = {
 //     name: "Mayuresh",
 //     skills: ["CPP", "JavaScript", "Java"],
-//     showskills: function showskills() {
+//     showskills: function showskills() {    //always write name of function for best practice
 //         let printskills = "";
 //         for (let i = 0; i < this.skills.length; i++) {
 //             printskills += portFolio.skills[i] + ",";
