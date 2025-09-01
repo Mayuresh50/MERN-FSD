@@ -163,13 +163,12 @@ str = `Hello, Welcome to MERN stack course`
 // const students = ["Mayuresh", "Darshan", "Hitesh"]
 // addStudent(students, "Mitanshu", "Jayesh", "Pratik")
 
-const [hi, ...bye] = ["Hi", "Bye", "Byee", "Byeeee"]
-console.log(hi, bye);
+// const [hi, ...bye] = ["Hi", "Bye", "Byee", "Byeeee"]
+// console.log(hi, bye);
 
-//spread operator 
-const arr = [1, 2, 3, 4, 5]
-console.log("Spreaded array :", [0, ...arr, 67, 678, 679])
+// //spread operator 
+// const arr = [1, 2, 3, 4, 5]
+// console.log("Spreaded array :", [0, ...arr, 67, 678, 679])
 
 //HW
 //Spread and rest use in object
-
