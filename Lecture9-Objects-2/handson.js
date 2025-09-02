@@ -31,11 +31,11 @@ str = "     Hello, This is Mayuresh from Shirpur, Maharashtra     "
 
 // console.log(str.split(","))
 
-// console.log(str.toUpperCase())
+// console.log(str.toUpperCase().trim())
 
-// console.log(str.toLowerCase())
+// console.log(str.toLowerCase().trim())
 
-//Objects using spread operator 
+//Objects using spread operator
 // const string = "Vaibhav";
 // const number = 66;
 // const bool = true;

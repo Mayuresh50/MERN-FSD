@@ -50,7 +50,7 @@
 // console.log(typeof (str));
 
 //Strings using double quotes
-// str = "ABC"        //type 2 of defining strings 
+// str = "ABC"        //type 2 of defining strings
 // console.log(typeof (str));
 
 //strings using backticks
@@ -65,7 +65,7 @@
 // str = 'Hi this is "Java" classes';
 // console.log({ str })
 
-//case when we must use backticks 
+//case when we must use backticks
 // str = `Hi I'm Mayuresh, I have joined "Mern classes"`;
 // console.log({ str });
 
@@ -128,6 +128,7 @@
 //toLowercase() Function
 // console.log(str.toLowerCase());
 
+//Wrapper Object
 // const string = "Vaibhav";
 // const number = 66;
 // const bool = true;
