@@ -53,7 +53,6 @@
 // }
 // console.log(reverseByWords(str));      I am mayuresh   -->   sheruyam ma I
 
-
 //Check if string contains only number
 // function isStringContainNumbers(str) {
 //     str = str.toString().split("");
@@ -71,4 +70,3 @@
 // }
 // let str = "12345a"
 // console.log(isStringContainNumbers(str));      12345  --> True     12345a  --> False
-
