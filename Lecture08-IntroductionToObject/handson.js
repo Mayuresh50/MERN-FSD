@@ -36,29 +36,29 @@
 
 
 
-const bookObj = {
-    book1: {
-        title: "The Alchemist",
-        author: "Paulo Coelho",
-        price: 399,
-        publishedYear: 1988
-    },
-    book2: {
-        title: "Atomic Habits",
-        author: "James Clear",
-        price: 499,
-        publishedYear: 2018
-    },
-    book3: {
-        title: "Rich Dad Poor Dad",
-        author: "Robert T. Kiyosaki",
-        price: 299,
-        publishedYear: 1997
-    }
-}
+// const bookObj = {
+//     book1: {
+//         title: "The Alchemist",
+//         author: "Paulo Coelho",
+//         price: 399,
+//         publishedYear: 1988
+//     },
+//     book2: {
+//         title: "Atomic Habits",
+//         author: "James Clear",
+//         price: 499,
+//         publishedYear: 2018
+//     },
+//     book3: {
+//         title: "Rich Dad Poor Dad",
+//         author: "Robert T. Kiyosaki",
+//         price: 299,
+//         publishedYear: 1997
+//     }
+// }
 
 
-for (let i in bookObj) {
-    if (bookObj[i].publishedYear > 1999)
-        console.log(`Name : ${bookObj[i].name}, Author : ${bookObj[i].author}`)
-}
+// for (let i in bookObj) {
+//     if (bookObj[i].publishedYear > 1999)
+//         console.log(`Name : ${bookObj[i].name}, Author : ${bookObj[i].author}`)
+// }
