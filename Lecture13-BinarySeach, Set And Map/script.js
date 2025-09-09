@@ -138,7 +138,7 @@ Map :- Contains key - value pairs , Key must be different across pairs,  key can
 
 */
 
-//Set in JS
+//Set in JS  
 
 // let set = new Set([1, 2, 4, 4, 4, 5, 5])
 // console.log(set)
@@ -208,14 +208,28 @@ MAP
 // console.log({ mapArr1 }) 
 
 
+//Sets always maintain insertion order not index element
+
 
 
 //Union and Intersection
 
-let arr1 = [1, 2, 3, 4, 5, 6]
+let arr1 = [1, 2, 3, 4, 5, 6]   // Order of insertion may be different because It is based on insertion order onn Set/Map
 let arr2 = [2, 5, 6, 3, 1, 3]
 
 const UnionArr = new Set([...arr1, ...arr2]);
-console.log(UnionArr);
+console.log({ UnionArr });
 
+
+
+//intersection 
+let set1 = new Set(arr1);
+let intersection = new Set();
+
+for (let value of set1) {
+    if (arr2.includes(value)) {
+        intersection.add(value)
+    }
+}
+console.log({ intersection });
 
