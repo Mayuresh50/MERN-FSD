@@ -179,9 +179,9 @@ let arr = [2, 3, 4, 1, 0, 1, 2, 3, 4, 5, 10];
 // printNumbersTillN(5)
 
 //multiplication
-function recursiveMultiplication(n, m) {
-    if (n == 0) return 0;
+// function recursiveMultiplication(n, m) {
+//     if (n == 0) return 0;
 
-    return m + recursiveMultiplication(n - 1, m)
-}
-console.log(recursiveMultiplication(5, 2))
+//     return m + recursiveMultiplication(n - 1, m)
+// }
+// console.log(recursiveMultiplication(5, 2))
