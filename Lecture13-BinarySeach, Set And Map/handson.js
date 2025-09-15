@@ -133,3 +133,7 @@
 //     }
 // }
 // console.log({ intersection });
+
+
+// let arr = ['a','b','c']
+

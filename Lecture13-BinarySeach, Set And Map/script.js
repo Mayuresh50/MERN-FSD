@@ -54,7 +54,7 @@ otherwise, if left range is getting eliminated   --> then low will become (mid+1
 //         else if (arr[mid] > target) {
 //             high = mid - 1;
 //         }
-//         else {      arr[mid]<target
+//         else {      //arr[mid]<target
 //             low = mid + 1;
 //         }
 //     }
