@@ -104,3 +104,137 @@
 
 
 
+//Apna College
+
+//Ascending bubble sort algorithm
+// function bubblesort1(arr) {
+//     let n = arr.length;
+
+//     for (let i = 0; i < n - 1; i++) {
+//         for (let j = 0; j < n - i - 1; j++) {
+//             if (arr[j] > arr[j + 1]) {
+//                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+//             }
+//         }
+//     }
+//     return arr;
+// }
+// let arr = [4, 1, 2, 3, 5];
+// console.log(`Answer of Bubble sort ${bubblesort1(arr)}`)
+//Time complexity : O(N*N)
+
+
+//Ascending bubble sort algorithm
+// function bubblesort1(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n - 1; i++) {
+//         let isSwap = false;
+//         for (let j = 0; j < n - i - 1; j++) {
+//             if (arr[j] > arr[j + 1]) {
+//                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+//                 isSwap = true;       //This is used to check is the array is already sorted --> Slightly optimized
+//             }
+//             if (!isSwap) {
+//                 console.log(`Array is already sorted`)
+//                 return arr;
+//             }
+//         }
+//     }
+// }
+// let arr = [1, 2, 3, 4, 5];
+// console.log(`Answer of Bubble sort ${bubblesort1(arr)}`)
+
+//Descendinng Bubblesort array
+// function bubblesort1(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n - 1; i++) {
+//         let isSwap = false;
+//         for (let j = 0; j < n - i - 1; j++) {
+//             if (arr[j] < arr[j + 1]) {     //A small change here and we got descending sorted array
+//                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+//                 isSwap = true;       //This is used to check is the array is already sorted --> Slightly optimized
+//             }
+//         }
+//         if (!isSwap) {
+//             console.log(`Array is already sorted`)
+//             return arr;
+//         }
+//     }
+//     return arr;   //If the above condition fails then we should return the array after completing the descending sorting
+// }
+// let arr = [4, 1, 2, 3, 5];
+// console.log(`Answer of Bubble sort ${bubblesort1(arr)}`)
+
+
+//Ascending selection sort algorithm
+// function selectionSort(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n - 1; i++) {
+//         let smallest = i;   //Assume that the current index is smallest
+//         for (let j = i + 1; j < n; j++) {
+//             if (arr[j] < arr[smallest]) {
+//                 smallest = arr[j];
+//             }
+//         }
+//         [arr[i], arr[smallest]] = [arr[smallest], arr[i]]    //Swaping of smallest element
+//     }
+//     return arr;
+// }
+// let arr = [1, 2, 3, 4, 5];
+// console.log(`Answer of Selection sort ${selectionSort(arr)}`)
+//Time complexity : O(N*N)
+
+//Descending order
+// function selectionSort(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n - 1; i++) {
+//         let smallest = i;   //Assume that the current index is smallest
+//         for (let j = i + 1; j < n; j++) {
+//             if (arr[j] > arr[smallest]) {    //A small change here and we are using at descending selection sort algorithm
+//                 smallest = arr[j];
+//             }
+//         }
+//         [arr[i], arr[smallest]] = [arr[smallest], arr[i]]    //Swaping of smallest element
+//     }
+//     return arr;
+// }
+// let arr = [1, 2, 3, 4, 5];
+// console.log(`Answer of Selection sort ${selectionSort(arr)}`)
+//Time complexity : O(N*N)
+
+// function insertionSort(arr) {
+//     let n = arr.length;
+//     for (let i = 1; i < n; i++) {  //intentionally running loop from i = 1 because we are assuming that arr[0] is a sorted part of the array
+//         current = arr[i];     //Using the first unsorted element as unsorted element and try to insert it in the sorted part of array
+//         prev = i - 1;       //Assigning previous as last element from the sorted array
+//         while (prev >= 0 && arr[prev] > current) {  //Iterating tilll prev >=0 and comparing current with the last element of sorted part of array
+//             arr[prev + 1] = arr[prev];   //shifting the position of last element of sorted array to the pos+1 place
+//             prev--; //decrementing
+//         }
+//         arr[prev + 1] = current;    //as we are checking for prev > current and if this condition fails then the current element should be inserted at prev + 1 position
+// //Placing current element at its correct position
+//     }
+//     return arr;
+// }
+// let arr = [4, 1, 2, 3, 5, 6, 9, 8, 7];
+// console.log(`Answer of Insertion Sort is ${insertionSort(arr)}`);
+//Time complexity : O(N*N)
+
+
+//Descending order of insertion sort algorithm
+// function insertionSort(arr) {
+//     let n = arr.length;
+//     for (let i = 1; i < n; i++) {  //intentionally running loop from i = 1 because we are assuming that arr[0] is a sorted part of the array
+//         current = arr[i];     //Using the first unsorted element as unsorted element and try to insert it in the sorted part of array
+//         prev = i - 1;       //Assigning previous as last element from the sorted array
+//         while (prev >= 0 && arr[prev] < current) {  //Iterating tilll prev >=0 and comparing current with the last element of sorted part of array
+//             arr[prev + 1] = arr[prev];   //shifting the position of last element of sorted array to the pos+1 place
+//             prev--; //decrementing
+//         }
+//         arr[prev + 1] = current;    //as we are checking for prev > current and if this condition fails then the current element should be inserted at prev + 1 position
+//         //Placing current element at its correct position
+//     }
+//     return arr;
+// }
+// let arr = [4, 1, 2, 3, 5, 6, 9, 8, 7];
+// console.log(`Answer of Insertion Sort is ${insertionSort(arr)}`);
