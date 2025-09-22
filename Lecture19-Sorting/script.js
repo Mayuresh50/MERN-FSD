@@ -82,5 +82,12 @@ Sorting :
 
 /*
 Selection Sort : 
-- 
+- In one pass : select minimum element from unsorted array and swap with first element of sorted array
+- After first pass, the smallest element will be at the first position
+- After Each Pass, One element will be placed at its correct sorted position (from the front side)
+- No Optimization because we have to compare all elements even if array is sorted
+- TC : Best → O(N*N) 
+     : Average → O(N*N)
+     : Worst → O(N*N)
+- SC : O(1) --> Constant
 */
