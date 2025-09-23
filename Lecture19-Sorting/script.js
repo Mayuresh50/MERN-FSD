@@ -74,7 +74,7 @@ Sorting :
 - After first pass, the greatest element will be at the last position
 - After Each Pass, One element will be placed at its correct sorted position
 - Refer Optimization for not checking elements.  --> already placed at their correct position
-- TC :Best --> O(N);
+- TC :Best --> O(N*N);
      :Average --> H.W
      :Worst --> O(N*N)
 - SC : O(1)  --> Constant
