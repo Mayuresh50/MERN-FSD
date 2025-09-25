@@ -39,9 +39,6 @@
 // console.log(insertionSort(arr))
 
 
-
-
-
 // function insertionSort(arr) {
 //     let n = arr.length;
 //     for (let i = 1; i < n; i++) {
@@ -58,33 +55,30 @@
 
 //Given an array, place its last element at a position such that all smaller element are in left and all greater element are in right
 
-// let arr = [2, 1, 7, 3, 5, 4]
-// function partition(arr, low, high) {
-//     let partitionedElem = arr[high];
-//     let j = low - 1;
-//     for (let i = low; i < high; i++) {
-//         if (arr[i] < partitionedElem) {
-//             j++;
-//             [arr[i], arr[j]] = [arr[j], arr[i]]
-//         }
-//     }
-//     [arr[j + 1], arr[high]] = [arr[high], arr[j + 1]];
-//     return j + 1;
-// }
-// // console.log(partition(arr, 0, arr.length - 1));
-
 // //Try Brute force on your own (HW)
 
+let arr = [2, 1, 7, 3, 5, 4]
+function placeLastElem(arr) {
+    let n = arr.length;
+    let lastElem = arr[n - 1];
+    let ind = 0; //index that's available to place elements <= lastElem
 
-// function quicksort(arr, low, high) {
-//     if (low == high) return;
-//     let pivot = partition(arr, low, high);
-//     quicksort(arr, low, pivot - 1);
-//     quicksort(arr, pivot + 1, high);
-//     return arr;
-// }
+    for (let i = 0; i < n; i++) {
+        if (arr[i] <= lastElem) {
+            [arr[i], arr[ind]] = [arr[ind], arr[i]];
+            ind++;
+        }
+    }
 
-// console.log(quicksort(arr, 0, arr.length - 1));
+    return arr;
+}
+console.log(placeLastElem(arr));
+
+function quicksort(arr, low, high) {
+
+}
+
+console.log(quicksort(arr, 0, arr.length - 1));
 
 
 
