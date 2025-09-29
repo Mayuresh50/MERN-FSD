@@ -38,6 +38,9 @@
 
 
 //High Order Function
+/*
+1. For Each Function
+*/
 //These functions are either function that takes function as an argument or returns a function as result
 
 // let arr = [2, 1, 6, 3, 9];
@@ -61,7 +64,7 @@
 
 
 /*
-1. Map()
+2. Map()
     - Transforms array
     - Returns an array
     - Does not change the original array
@@ -69,9 +72,10 @@
 
 // let arr = [2, 11, 5, 4, 7];
 // let squaredarr = arr.map((value, index, array) => {
-//     return value * value;
+//     //return value * value;
+//     console.log(value * value)
 // });
-// console.log(squaredarr);
+// console.log({ squaredarr });
 
 
 
@@ -87,7 +91,7 @@
 
 
 /*
-2. filter()
+3. filter()
     -Keeps the elements that passes the condition
     -returns and array
     -Does not change the original array
