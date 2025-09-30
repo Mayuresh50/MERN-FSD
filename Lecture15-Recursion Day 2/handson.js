@@ -1,8 +1,3 @@
-// // Online Javascript Editor for free
-// // Write, Edit and Run your Javascript code using JS Online Compiler
-
-// //console.log("Try programiz.pro")
-
 // const n = 6;
 // const words = ["cat", "tea", "pet", "tac", "act", "eat"];
 
