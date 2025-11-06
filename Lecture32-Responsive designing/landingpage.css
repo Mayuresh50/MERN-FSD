@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    text-align: center;
+}
+
+div>div {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(125, 190, 255);
+}
+
+/* you can add gradient properties using nth-of-type and last-child properties */
+/* Linear Gradient */
+
+.linear div:nth-of-type(1) {
+    background: linear-gradient(red 80%, blue);
+}
+
+.linear div:nth-of-type(2) {
+    background: linear-gradient(to right, red, blue 60%);
+}
+
+.linear div:last-of-type {
+    background: linear-gradient(110deg, red, blue)
+}
+
+/* Radial Gradient  */
+.radial div:nth-of-type(1) {
+    background: radial-gradient(white, black);
+}
+
+.radial div:nth-of-type(2) {
+    background: radial-gradient(farthest-side, black, white);
+}
+
+.radial div:nth-of-type(3) {
+    background: radial-gradient(closest-side, rgb(190, 50, 50), black);
+}
+
+/* Conic Gradient */
+.conic div:nth-of-type(1) {
+    background: conic-gradient(white, black, red, yellow, aqua);
+}
+
+.conic div:nth-of-type(2) {
+    background: conic-gradient(red, blue, pink, yellow, yellowgreen);
+}
+
+.conic div:nth-of-type(3) {
+    background: conic-gradient(black, red, yellow, aqua, white, pink);
+}

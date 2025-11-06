@@ -1,0 +1,49 @@
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+div>div {
+    width: 300px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 100px auto;
+}
+
+div>div:first-child {
+    background-color: chocolate;
+}
+
+div>div:last-child {
+    background-color: rgb(56, 23, 0);
+}
+
+.child:active {
+    background-color: aqua;
+}
+
+.child:hover {
+    border: 5px solid black;
+}
+
+.elements p::before {
+    content: "Mayuresh";
+}
+
+.elements p::first-letter {
+    content: "";
+    color: blue;
+}
+
+
+.elements p::first-line {
+    content: "";
+    color: green;
+}

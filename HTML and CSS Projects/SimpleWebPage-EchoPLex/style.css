@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    color: black;
+    padding: 10px;
+
+}
+
+.logo {
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(106, 157, 228);
+    align-items: left;
+}
+
+.button button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    border: 6px;
+    border-radius: 20px;
+    background-color: #0077ef;
+    color: white;
+    align-items: left;
+}
+
+.button button:hover {
+    background-color: #005bb5;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px
+}
+
+.introduction h2 {
+    font-size: 30px;
+    color: black;
+    margin: 40px auto;
+    text-align: left;
+
+}
+
+.introduction h2 span {
+    color: #0077ef;
+}
+
+.introduction h5 {
+    font-size: 10px;
+    color: rgb(39, 39, 39);
+    margin: 20px auto;
+    text-align: left;
+}
+
+.introduction button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    border: 6px;
+    border-radius: 20px;
+    background-color: #0077ef;
+    color: white;
+}
+
+.introduction button button2 {
+    background-color: white;
+}
+
+.introduction button:hover {
+    background-color: #005bb5;
+}
+
+.introduction img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.join {
+    text-align: center;
+    margin: 40px;
+}
+
+.join h2 {
+    font-size: 25px;
+    color: black;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.join img {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.begin {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+.begin button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    border: 6px;
+    border-radius: 20px;
+    background-color: #94b0cd;
+    color: white;
+}
+
+.begin h2 {
+    font-size: 25px;
+    color: rgb(218, 218, 220);
+    margin: 0px auto;
+    align-items: center;
+}
+
+.begin button {
+    background-color: #003e62;
+}
+
+.begin button:hover {
+    background-color: #008df2;
+}
+
+.features1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.features2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 30px;
+    padding: 18px;
+    border-radius: 14px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    text-align: center;
+    justify-content: space-between;
+    color: #faf8f8;
+    font-size: 14px;
+    padding: auto;
+}
+
+.message {
+    text-align: left;
+    justify-content: left;
+}
+
+footer a {
+    color: #faf8f8;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style-type: none;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduction {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introduction img,
+    .join img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .features1 {
+        grid-template-columns: 1fr;
+    }
+
+    .features2 {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
