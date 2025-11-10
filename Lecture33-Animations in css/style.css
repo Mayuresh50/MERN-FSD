@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 100px;
+}
+
+.container .box {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+}
+
+body .box:hover {
+    width: 500px;
+    background-color: cornflowerblue;
+}
+
+.transition {
+    /* transition-property: width; */
+    transition: width 2s,
+        background-color 4s;
+}
+
+.linear {
+    /* transition-timing-function: linear; */
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.step-start {
+    transition-timing-function: step-start;
+}
+
+.step-end {
+    transition-timing-function: step-end;
+}
+
+.steps {
+    transition-timing-function: steps(5);
+}

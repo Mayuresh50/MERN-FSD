@@ -1,0 +1,63 @@
+/* body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 3s ease-in-out;
+}
+
+
+body:hover .ball {
+    bottom: calc(100vh - 50px);
+    left: calc(100vw - 50px);
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vh;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.plane {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+body:hover .plane {
+    left: 80%;
+    bottom: 80%;
+}
+
+.transition {
+    transition-property: all;
+    transition-duration: 3s;
+}

@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 100px;
+}
+
+.container .box {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    background-color: blueviolet;
+    border: solid 5px black;
+    border-radius: 5px;
+}
+
+body:hover,
+box {
+    padding: 100px;
+
+    /* NOTE : We can combine all the transform attributes
+    NOTE: Try to find and understand these two transforms */
+    /* transform: rotate(90deg) translate(200px);
+    transform: translate(200px) rotate(90deg); */
+
+    /* transform: scale(1.2); */
+
+    /* transform: rotate(-45deg); */
+    /* transform: rotate(0.5turn); */
+
+    /* transform: skew(45deg); */
+
+    /* transform: translate(100px); */
+
+    /* transform: translate(-50%, 200px); */
+    /*
+    Positive X is Right side and Positive Y is Down side
+
+    Negative X is Left side and Negative Y is Up side
+    */
+}
+

@@ -38,7 +38,7 @@ div>div:last-child {
 }
 
 .elements p::first-letter {
-    content: "";
+    content: "";/*  Mandatory */
     color: blue;
 }
 
