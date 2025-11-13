@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    border: solid 5px black;
+    padding: 20px auto;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-div {
+    width: 80%;
+    border: solid 5px blue;
+    padding: 20px auto;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 60%;
+    border: solid 5px rgb(180, 0, 0);
+    padding: 20px auto;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

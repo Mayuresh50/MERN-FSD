@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form class="contact-us">
+            <div class="name">
+                <label for="name">Full name : </label>
+                <input type="text" id="name" placeholder="Full name" />
+            </div>
+            <div class="mobile">
+                <label for="mobile">Mobile Number : </label>
+                <input type="number" id="mobile" placeholder="Mobile number" />
+            </div>
+            <div class="gender">
+                <label for="">Gender :</label>
+                <label for="male">Male</label>
+                <input name="gender" type="radio" id="male" value="Male" />
+                <label for="female">Female</label>
+                <input name="gender" type="radio" id="female" value="Female" />
+            </div>
+            <div class="consent">
+                <label for="consent">Agree to TnC</label>
+                <input type="checkbox" id="consent" />
+            </div>
+            <div class="city">
+                <select id="city">
+                    <option value="">Select City</option>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Nashik</option>
+                    <option>Dhule</option>
+                    <option>Shirpur</option>
+                </select>
+            </div>
+            <button>Submit</button>
+            <script src="contactus.js"></script>
+        </form>
+    </div>
+</body>
+
+</html>
