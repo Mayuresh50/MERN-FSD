@@ -28,3 +28,4 @@ submitbtn.addEventListener("click", (event) => {
 //email validation
 //phone number validation
 //space between mobile number
+//prevent default form submission
