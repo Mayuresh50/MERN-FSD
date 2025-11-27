@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal and Manipulation</title>
+    <style>
+        body {
+            margin: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="grand-parent">
+        <div class="parent">
+            <div class="child">Child</div>
+        </div>
+    </div>
+    <div class="parent">parent</div> -->
+
+    <div class="great-grand-parent accio">
+        <div class="grand-parent">
+            <div class="parent">
+                <div class="child">child</div>
+            </div>
+        </div>
+    </div>
+    <div class="parent">parent</div>
+
+    <script>
+        const child = document.querySelector(".child");
+        console.log(child.parentElement)
+
+        const parent = document.querySelector(".parent");
+        console.log(parent.parentElement);
+
+        const grandParent = document.querySelector(".grand-parent");
+        console.log(grandParent.parentElement);
+
+        console.log(document.body.parentElement);
+        
+        console.log(document.body.parentElement.parentElement);
+
+        console.log(child.closest(".parent"));
+
+        console.log(child.closest(".accio"));
+    </script>
+
+</body>
+
+</html>

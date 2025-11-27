@@ -29,3 +29,8 @@ submitbtn.addEventListener("click", (event) => {
 //phone number validation
 //space between mobile number
 //prevent default form submission
+
+
+
+
+//:checked = Pehla element jo checked hai 

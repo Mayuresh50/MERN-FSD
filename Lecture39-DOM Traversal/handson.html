@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal Practice</title>
+</head>
+
+<body>
+    <h1>Learn JS</h1>
+    <div class="grand-parent">
+        <div class="parent-one">
+            <div class="child">Child One</div>
+            <div class="child" id='next'>Child Two</div>
+        </div>
+        <div class="parent-two">
+            <div class="child">Child Three</div>
+            <div class="child">Child Four</div>
+        </div>
+    </div>
+    <script>
+        //Dom Traversal is the method of navigating through HTML document structure (Parent, Child, Siblings elements)
+        //Three types of Traversal : Downward, Upward and Sideways 
+
+        const grandParent = document.querySelector(".grand-parent");
+        // console.log(grandParent);/
+
+        //Downward --> Parent se Child tak jana
+        // console.log(grandParent.children[0]);
+        // grandParent.children[0].style.backgroundColor = 'red';   //We can access child node and can change properties of it
+
+
+        //Upward -->Child se Parent tak jana 
+        const child = document.querySelector(".child"); //First matching selector will be selected only
+        // console.log(child.parentElement.parentElement);
+        // console.log(child.closest(".grand-parent"));
+
+
+        //Sideways -->Siblings tak travel karna
+        const next = document.getElementById("next");
+        //console.log(child.nextElementSibling);
+        //console.log(child.previousElementSibling);   //Prints null if its the first sibiling in list
+        //console.log(next.previousElementSibling);
+
+    </script>
+</body>
+
+</html>
