@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            margin: 100px;
+            padding: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">Child</div>
+    </div>
+    <script>
+        const parent = document.querySelector(".parent")
+        const child = document.querySelector(".child")
+
+        parent.addEventListener("click", (event) => {
+            // event.stopPropagation();
+            console.log("Parent Clicked")
+
+            console.log("target", event.target);//element which was triggered the event, will be the deepest child of parent
+            console.log("currentTarget", event.currentTarget);//element that has captured the event ie the element on which the event listener is attached
+        },
+            { capture: true });
+
+
+
+        // child.addEventListener("click", (event) => {
+        //     event.stopImmediatePropagation();
+        //     console.log("Child Clicked")
+        // },
+        //     { capture: true });
+
+        // child.addEventListener("click", (event) => {
+        //     console.log("Child Clicked Twice")
+        // },
+        //     { capture: true });
+    </script>
+</body>
+
+</html>
