@@ -12,9 +12,9 @@ Browser can give storage : 5-10Mb only
 
 In Memory problem : 
 
-&nbsp;	1. To check a user logged in or not
+	1. To check a user logged in or not
 
-&nbsp;	2. You have to store in browser if it is using on ecommerce cart
+	2. You have to store in browser if it is using on ecommerce cart
 
 
 
