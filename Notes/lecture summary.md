@@ -64,9 +64,17 @@ Security : We will not store any confidential information in localstorage
 
 we can store only things that are convenient
 
+<!-- ============================================================================================================ -->
+Session Storage : 
 
+Same as local Storage
 
+1. Data stored in ***key-value*** pairs 
 
+2.Datatype should ***String*** for Key and Value.
 
+3. Local Storage shares across all tabs but in session storage it stores it in only one tab 
 
+4. It is only for a specific tab
 
+5. Lifetime is until only tab is opened, once tab is closed 
