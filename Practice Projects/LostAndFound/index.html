@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="first-page">
+        <h1>Lost and Found App</h1>
+        <div class="radio">
+            <label for="lost">Lost</label>
+            <input name="status" type="radio" id="lost" value="Lost" />
+            <label for="found">Found</label>
+            <input name="status" type="radio" id="found" value="Found" />
+        </div>
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" name="item-name">
+        <br>
+        <label for="item-description">Item Description:</label>
+        <input type="text" id="item-description" name="item-description">
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location">
+        <br>
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact">
+        <br>
+        <label for="photo-url">Photo URL:</label>
+        <input type="text" id="photo-url" name="photo-url">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

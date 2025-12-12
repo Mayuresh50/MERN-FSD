@@ -78,3 +78,13 @@ Same as local Storage
 4. It is only for a specific tab
 
 5. Lifetime is until only tab is opened, once tab is closed 
+
+
+<!-- =========================================================================================================== -->
+
+
+Letcure 47 : 
+OOPs : 
+Object oriented Programming'
+
+why : 

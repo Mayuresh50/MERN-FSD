@@ -8,6 +8,8 @@ const forms = [personalDetails, contactDetails, educationDetails];
 
 const nextButtons = document.querySelectorAll(".next1, .next2");
 const prevButtons = document.querySelectorAll(".prev1, .prev2");
+const submitButton = document.querySelector(".submit-btn");
+
 
 let currentForm = 0;
 

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Study Group Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>📚 Study Group Scheduler 👥</header>
+
+    <div class="container">
+        <div class="form-container">
+            <h3>Register for Study Group</h3>
+
+            <form id="userForm">
+                <label>Name:</label>
+                <input type="text" id="nameInput" required />
+
+                <label>Email:</label>
+                <input type="email" id="emailInput" required />
+
+                <label>Subjects (comma separated):</label>
+                <input type="text" id="subjectsInput" placeholder="Math, Physics" />
+
+                <button type="submit">Add User</button>
+            </form>
+        </div>
+
+        <div class="sidebar">
+            <h3>Active Users</h3>
+            <div id="usersList"></div>
+        </div>
+    </div>
+
+    <script>
+        function User(name, email, subjects) {
+            this.name = name;
+            this.email = email;
+            this.subjects = subjects;
+        }
+
+        const users = [];
+
+        const userForm = document.getElementById("userForm");
+        const nameInput = document.getElementById("nameInput");
+        const emailInput = document.getElementById("emailInput");
+        const subjectsInput = document.getElementById("subjectsInput");
+        const usersList = document.getElementById("usersList");
+
+        userForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const subjects = subjectsInput.value
+                ? subjectsInput.value.split(",").map((s) => s.trim())
+                : [];
+
+            if (!name || !email) {
+                alert("Please fill required fields");
+                return;
+            }
+
+            const newUser = new User(name, email, subjects);
+            users.push(newUser);
+
+            addUserToSidebar(newUser);
+            userForm.reset();
+        });
+
+        function addUserToSidebar(user) {
+            const userDiv = document.createElement("div");
+            userDiv.className = "user-item";
+            userDiv.textContent =
+                `${user.name} - ${user.email}` +
+                (user.subjects.length
+                    ? ` | Subjects: ${user.subjects.join(", ")}`
+                    : "");
+
+            usersList.appendChild(userDiv);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+body {
+  padding: 20px;
+  margin: 20px auto;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+label {
+  margin-top: 10px;
+}
+
+body.light {
+  background: white;
+  color: black;
+}
+
+body.dark {
+  background: black;
+  color: white;
+}
