@@ -77,34 +77,75 @@ const teams = ["CSK", "MI", "SRH", "KKR", "GT"];
 // }
 // console.log(factorial(num))
 
-function factorial(num) {
+// function factorial(num) {
+//     let fact = 1;
+//     for (let i = 1; i <= num; i++) {
+//         fact *= i;
+//     }
+//     return fact;
+// }
+// console.log(factorial(num))
+
+// function nCr(n, r) {
+//     if (n - r < 0) return -1;
+
+//     const nFact = factorial(n);
+//     const rFact = factorial(r);
+//     const nrFact = factorial(n - r);
+
+//     return nFact / (rFact * nrFact);
+// }
+
+// function nCrOfArray(arr) {
+//     const r = 4;
+//     const ans = [];
+//     for (let number of arr) {
+//         const ncr = nCr(number, r);
+//         ans.push(ncr);
+//     }
+//     return ans;
+// }
+
+// let arr = [4, 10, 6, 8];
+// console.log(nCrOfArray(arr));
+
+
+//Reverse a string
+function reverseString(str) {
+    let reversed = "";
+    // let n = str.split("")
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed;
+}
+
+let str = "Mayuresh";
+console.log(reverseString(str));
+
+//Factorial 
+function factorial(n) {
     let fact = 1;
-    for (let i = 1; i <= num; i++) {
-        fact *= i;
+    for (let i = 1; i <= n; i++) {
+        fact = fact * i;
     }
     return fact;
 }
-console.log(factorial(num))
+let n = 5
+console.log(factorial(n));
 
-function nCr(n, r) {
-    if (n - r < 0) return -1;
-
-    const nFact = factorial(n);
-    const rFact = factorial(r);
-    const nrFact = factorial(n - r);
-
-    return nFact / (rFact * nrFact);
-}
-
-function nCrOfArray(arr) {
-    const r = 4;
-    const ans = [];
-    for (let number of arr) {
-        const ncr = nCr(number, r);
-        ans.push(ncr);
+//fibonacci series
+function fibbonacci(n) {
+    let a = 0;
+    let b = 1;
+    let result = [];
+    for (let i = 1; i <= n; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+        result.push(a);
     }
-    return ans;
+    return result;
 }
+console.log(fibbonacci(10));
 
-let arr = [4, 10, 6, 8];
-console.log(nCrOfArray(arr)); 

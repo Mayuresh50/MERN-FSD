@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    margin-top: 100px;
+    padding: 20px;
+
+}
+
+main {
+    width: 60vw;
+    margin: 0 auto;
+    background: #d6d8ff;
+    padding: 50px;
+    border: 2px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+}
+
+.timer {
+    text-align: end;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: underline wavy;
+}
+
+.question {
+    margin: 30px 0;
+}
+
+.options {
+    margin: 30px 0;
+}
+
+li {
+    padding: 10px;
+    list-style-type: none;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffcccc;
+}
