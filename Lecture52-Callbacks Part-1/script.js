@@ -32,6 +32,9 @@ function callbackFn() {}
 
 function saveFormData(callback) {
     /* 
+
+    Pyramid of DOM is created
+
     CALLBACK HELL:
     //code to save all personal details
     setTimeout(() => {
