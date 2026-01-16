@@ -1,18 +1,37 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Display from "./components/Display.jsx";
 import Card from "./components/Card.jsx";
+import Profilecard from "./components/Profilecard.jsx";
+import MayurPic from "./assets/MayurPic.jpg";
+import download from "./assets/download.jpg";
+import Productcard from "./components/Productcard.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      {/* <Display name="Mayuresh" /> */}
+      {/* <Display name="Mayuresh" />
       <Card theme="light" />
-      <Card theme="dark" />
+      <Card theme="dark" /> */}
+      
+      <Profilecard
+        name="Mayuresh"
+        desc="Computer Engineering Student"
+        image={MayurPic}
+      />
+
+      <Productcard
+        theme="light"
+        name="Boat Earphones"
+        desc="Rs:2999/-"
+        image={download}
+      />
+
+      <Productcard
+        theme="dark"
+        name="Boat Earphones"
+        desc="Rs:2999/-"
+        image={download}
+      />
     </>
   );
 }
