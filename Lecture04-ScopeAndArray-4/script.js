@@ -9,7 +9,6 @@
 // }
 // console.log(num);
 
-
 /*
 Prvious Lecture
 -frequent Array
@@ -50,7 +49,6 @@ Prvious Lecture
 // }
 // nestedScopes();
 
-
 //===========================================Arrays===========================================
 // Nested Arrays
 // let arr = [1, [2, 3], 4, 5, [6, 95, 71]];
@@ -72,7 +70,6 @@ Prvious Lecture
 //         }
 //     }
 // }
-
 
 //Method - 2 Using typeOf Keyword
 // for(let i =0;i<arr.length; i++){

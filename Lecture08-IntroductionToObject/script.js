@@ -6,7 +6,6 @@
 // let address = "Pune";
 // let className = "12th";
 
-
 //create variables to store name, age and address of Student parents
 // let ParentName = "Riya"
 // let ParentAge = 45;
@@ -14,12 +13,11 @@
 
 //Object Creation os Student
 // const studentObj = {
-//     name: "Piyush",    //Key-value pairs   (key = name, Value = Piyush)
-//     age: 17,
-//     address: "Pune",
-//     Std: 12
-// }
-
+// 	name: "Piyush", //Key-value pairs   (key = name, Value = Piyush)
+// 	age: 17,
+// 	address: "Pune",
+// 	Std: 12,
+// };
 
 //Object Creation of Parent
 // const parentObj = {
@@ -27,7 +25,6 @@
 //     age: 36,
 //     address: "Pune"
 // }
-
 
 //Access the properties in Object
 // console.log(`Student Name : ${studentObj.name}`);
@@ -40,17 +37,13 @@
 // console.log(`Parent address : ${parentObj.address}`);
 // console.log(`Parent age : ${parentObj.age}`);
 
-
 //Updating values of an object
 // studentObj.name = "Parteek";
 // console.log(`Updated Student name : ${studentObj.name}`)
 
-
 //Adding the property in object
 // parentObj.gender = "Female";
 // console.log({ parentObj })
-
-
 
 //Delete the property of an object
 // parentObj.standard = 12; //Inserting Property first
@@ -58,7 +51,6 @@
 
 // delete parentObj.standard; //Deleting property here
 // console.log({ parentObj })
-
 
 // const personObj = {
 //     name: "Mayuresh",
@@ -79,7 +71,6 @@
 // console.log(personObj["address"]);     //undefined
 // console.log(personObj.address.firstLine);     //Cannot read properties of undefined (reading 'firstLine')
 
-
 // if (personObj && personObj.address.firstLine && personObj.address) { //throws error that cannot read properties of undefined
 //     console.log(personObj)
 // }
@@ -87,7 +78,6 @@
 // if (personObj && personObj.address && personObj.address.firstLine) { //condition is FALSE at personObj.address
 //     console.log(personObj)
 // }
-
 
 //nested objects
 
@@ -104,32 +94,30 @@
 
 // console.log(`City of ${employeeObj.name} is ${employeeObj.address.city}`)
 
-
 //Array of objects
 // const studentObjArray = [
-//     studentObj, {
-//         name: "Mitanshu",
-//         age: 22,
-//         city: "Amalner",
-//         passOut: 2025
-//     }
-// ]
-// console.log({ studentObjArray })
+// 	studentObj,
+// 	{
+// 		name: "Mitanshu",
+// 		age: 22,
+// 		city: "Amalner",
+// 		passOut: 2025,
+// 	},
+// ];
+// console.log({ studentObjArray });
 
-
-// for (let i in studentObj) {   //You can use for - in loop to print values of objects
-//     console.log(`${i} : ${studentObj[i]}`)
+// for (let i in studentObj) {
+// 	//You can use for - in loop to print values of objects
+// 	console.log(`${i} : ${studentObj[i]}`);
 // }
 
 // console.log(`Keys of Student object are : ${Object.keys(studentObj)} `)   //Object.keys(objname) is used to print keys of an object;
 // console.log(`Keys of Student object are : ${Object.values[studentObj]} `)  //Object.values[objname] is used to print Values of an object; (spot the difference)
 
-
 //using object.keys()
 // for (let i of Object.keys(studentObj)) {   //You can use for - of loop to print key-values pairs of objects
 //     console.log(`${i} : ${studentObj[i]}`)
 // }
-
 
 // const classRoom = {
 //     studentobj1: {
@@ -182,7 +170,6 @@
 //     }
 // }
 
-
 //console.log("Details of student who resides in pune");
 // for (let i in classRoom) {    // i represents student object
 //     if (classRoom[i] && classRoom[i].address && classRoom[i].address.addressLine3) {    //this is the checks condition to identify whether i is an object ot not
@@ -192,7 +179,6 @@
 //     }
 // }
 //we can also push an object into an array by using arrname.push() method
-
 
 //functions inside object
 //Normal Functions, can be accessed as same as props
@@ -207,7 +193,6 @@
 //     }
 // }
 // carObj.running();
-
 
 //this keyword
 //It is used to access values of a specific abject and each object has its own this keyword
@@ -225,7 +210,6 @@
 //     }
 // }
 // carObj1.running();
-
 
 // const portFolio = {
 //     name: "Mayuresh",
